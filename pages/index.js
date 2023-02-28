@@ -1,10 +1,9 @@
 import Head from "next/head";
-import Image from "next/image";
 
 import { createClient } from "next-sanity";
 
 import Script from "next/script";
-import { useEffect } from "react";
+
 import imageUrlBuilder from "@sanity/image-url";
 import Link from "next/link";
 import NavBar from "../components/NavBar";
@@ -438,7 +437,10 @@ export default function Home({ blogs, profile, skills, projects }) {
             <div className="grid grid-cols-1 gap-6 pt-10 sm:grid-cols-2 md:gap-10 md:pt-12 lg:grid-cols-3">
               {skills.map((item) => {
                 return (
-                  <div key={item.name} className="group rounded px-8 py-12 shadow hover:bg-primary"> 
+                  <div
+                    key={item.name}
+                    className="group rounded px-8 py-12 shadow hover:bg-primary"
+                  >
                     <div className="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
                       <div className="hidden group-hover:block">
                         <img
@@ -484,7 +486,7 @@ export default function Home({ blogs, profile, skills, projects }) {
               {projects.map((item) => {
                 return (
                   <Link
-                  key={item}
+                    key={item}
                     href="/"
                     className="mx-auto transform transition-all hover:scale-105 md:mx-0"
                   >

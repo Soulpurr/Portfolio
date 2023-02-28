@@ -1,11 +1,7 @@
 import React from "react";
-import Head from "next/head";
-import Image from "next/image";
 
 import { createClient } from "next-sanity";
-import PortableText from "react-portable-text";
-import Script from "next/script";
-import { useEffect } from "react";
+
 import imageUrlBuilder from "@sanity/image-url";
 import Link from "next/link";
 import NavBar from "../components/NavBar";
