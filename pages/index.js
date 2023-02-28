@@ -110,17 +110,17 @@ export default function Home({ blogs, profile, skills, projects }) {
         {/* <div className="w-full z-50 top-0 py-3 sm:py-5  absolute ">
         <div className="container flex items-center justify-between">
           <div>
-            <a href="/">
-             <h2 className='text-white text-2xl font-bold'>{profile.title}</h2>
-            </a>
+            <Link href="/">
+             <h2 className=&apos;text-white text-2xl font-bold&apos;>{profile.title}</h2>
+            </Link>
           </div>
           <div className="hidden lg:block">
             <ul className="flex items-center">
 
               <li className="group pl-6">
 
-                <a href='#about'><span
-                  className="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white">About</span></a>
+                <Link href=&apos;#about&apos;><span
+                  className="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white">About</span></Link>
 
                 <span className="block h-0.5 w-full bg-transparent group-hover:bg-yellow"></span>
               </li>
@@ -135,40 +135,40 @@ export default function Home({ blogs, profile, skills, projects }) {
 
               <li className="group pl-6">
 
-              <a href='#portfolio'><span
-                  className="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white">Portfolio</span></a>
+              <Link href=&apos;#portfolio&apos;><span
+                  className="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white">Portfolio</span></Link>
 
                 <span className="block h-0.5 w-full bg-transparent group-hover:bg-yellow"></span>
               </li>
 
               <li className="group pl-6">
 
-              <a href='#clients'><span
-                  className="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white">Clients</span></a>
+              <Link href=&apos;#clients&apos;><span
+                  className="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white">Clients</span></Link>
 
                 <span className="block h-0.5 w-full bg-transparent group-hover:bg-yellow"></span>
               </li>
 
               <li className="group pl-6">
 
-              <a href='#work'><span
-                  className="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white">Work</span></a>
+              <Link href=&apos;#work&apos;><span
+                  className="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white">Work</span></Link>
 
                 <span className="block h-0.5 w-full bg-transparent group-hover:bg-yellow"></span>
               </li>
 
               <li className="group pl-6">
 
-              <a href='#statistics'><span
-                  className="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white">Statistics</span></a>
+              <Link href=&apos;#statistics&apos;><span
+                  className="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white">Statistics</span></Link>
 
                 <span className="block h-0.5 w-full bg-transparent group-hover:bg-yellow"></span>
               </li>
 
               <li className="group pl-6">
 
-              <a href='#blog'><span
-                  className="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white">Blog</span></a>
+              <Link href=&apos;#blog&apos;><span
+                  className="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white">Blog</span></Link>
 
                 <span className="block h-0.5 w-full bg-transparent group-hover:bg-yellow"></span>
               </li>
@@ -270,33 +270,33 @@ export default function Home({ blogs, profile, skills, projects }) {
                 </div>
                 <div className="pt-8 sm:pt-10 lg:pl-8 lg:pt-0">
                   <h1 className="text-center font-header text-4xl text-white sm:text-left sm:text-5xl md:text-6xl">
-                    Hello I'm {profile.name}!
+                    Hello I&apos;m {profile.name}!
                   </h1>
                   <div className="flex flex-col justify-center pt-3 sm:flex-row sm:pt-5 lg:justify-start">
                     <div className="flex items-center justify-center pl-0 sm:justify-start md:pl-1">
                       <p className="font-body text-lg uppercase text-white">
-                        Let's connect
+                        Let&apos;s connect
                       </p>
                       <div className="hidden sm:block">
                         <i className="bx bx-chevron-right text-3xl text-yellow"></i>
                       </div>
                     </div>
                     <div className="flex items-center justify-center pt-5 pl-2 sm:justify-start sm:pt-0">
-                      <a href={profile.fbLink}>
+                      <Link href={profile.fbLink}>
                         <i className="bx bxl-facebook-square text-2xl text-white hover:text-yellow"></i>
-                      </a>
-                      <a href={profile.twitter} className="pl-4">
+                      </Link>
+                      <Link href={profile.twitter} className="pl-4">
                         <i className="bx bxl-twitter text-2xl text-white hover:text-yellow"></i>
-                      </a>
-                      <a href="/" className="pl-4">
+                      </Link>
+                      <Link href="/" className="pl-4">
                         <i className="bx bxl-dribbble text-2xl text-white hover:text-yellow"></i>
-                      </a>
-                      <a href="/" className="pl-4">
+                      </Link>
+                      <Link href="/" className="pl-4">
                         <i className="bx bxl-linkedin text-2xl text-white hover:text-yellow"></i>
-                      </a>
-                      <a href={profile.ig} className="pl-4">
+                      </Link>
+                      <Link href={profile.ig} className="pl-4">
                         <i className="bx bxl-instagram text-2xl text-white hover:text-yellow"></i>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                   <Link href={"/blogs"}>
@@ -318,7 +318,7 @@ export default function Home({ blogs, profile, skills, projects }) {
                   Who am I?
                 </h2>
                 <h4 className="pt-6 font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl">
-                  I'm {profile.name}, a Web dev & ?
+                  I&apos;m {profile.name}, a Web dev & ?
                 </h4>
                 <p className="pt-6 font-body leading-relaxed text-grey-20">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
@@ -340,21 +340,21 @@ export default function Home({ blogs, profile, skills, projects }) {
                     </div>
                   </div>
                   <div className="flex items-center justify-center pt-5 pl-2 sm:justify-start sm:pt-0">
-                    <a href="/">
+                    <Link href="/">
                       <i className="bx bxl-facebook-square text-2xl text-primary hover:text-yellow"></i>
-                    </a>
-                    <a href="/" className="pl-4">
+                    </Link>
+                    <Link href="/" className="pl-4">
                       <i className="bx bxl-twitter text-2xl text-primary hover:text-yellow"></i>
-                    </a>
-                    <a href="/" className="pl-4">
+                    </Link>
+                    <Link href="/" className="pl-4">
                       <i className="bx bxl-dribbble text-2xl text-primary hover:text-yellow"></i>
-                    </a>
-                    <a href="/" className="pl-4">
+                    </Link>
+                    <Link href="/" className="pl-4">
                       <i className="bx bxl-linkedin text-2xl text-primary hover:text-yellow"></i>
-                    </a>
-                    <a href="/" className="pl-4">
+                    </Link>
+                    <Link href="/" className="pl-4">
                       <i className="bx bxl-instagram text-2xl text-primary hover:text-yellow"></i>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -429,7 +429,7 @@ export default function Home({ blogs, profile, skills, projects }) {
 
           <div className="container py-16 md:py-20" id="services">
             <h2 className="text-center font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl">
-              Here's what I'm good at
+              Here&apos;s what I&apos;m good at
             </h2>
             <h3 className="pt-6 text-center font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl">
               These are the services Ioffer
@@ -438,7 +438,7 @@ export default function Home({ blogs, profile, skills, projects }) {
             <div className="grid grid-cols-1 gap-6 pt-10 sm:grid-cols-2 md:gap-10 md:pt-12 lg:grid-cols-3">
               {skills.map((item) => {
                 return (
-                  <div className="group rounded px-8 py-12 shadow hover:bg-primary">
+                  <div key={item.name} className="group rounded px-8 py-12 shadow hover:bg-primary"> 
                     <div className="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
                       <div className="hidden group-hover:block">
                         <img
@@ -477,13 +477,14 @@ export default function Home({ blogs, profile, skills, projects }) {
               Check out my Portfolio
             </h2>
             <h3 className="pt-6 text-center font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl">
-              Here's what I have done with the past
+              Here&apos;s what I have done with the past
             </h3>
 
             <div className="mx-auto grid w-full grid-cols-1 gap-8 pt-12 sm:w-3/4 md:gap-10 lg:w-full lg:grid-cols-2">
               {projects.map((item) => {
                 return (
-                  <a
+                  <Link
+                  key={item}
                     href="/"
                     className="mx-auto transform transition-all hover:scale-105 md:mx-0"
                   >
@@ -492,10 +493,10 @@ export default function Home({ blogs, profile, skills, projects }) {
                       className="w-full shadow"
                       alt="portfolio image"
                     />
-                  </a>
+                  </Link>
                 );
               })}
-              {/* <a
+              {/* <Link
                 href="/"
                 className="mx-auto transform transition-all hover:scale-105 md:mx-0"
               >
@@ -504,8 +505,8 @@ export default function Home({ blogs, profile, skills, projects }) {
                   className="w-full shadow"
                   alt="portfolio image"
                 />
-              </a>
-              <a
+              </Link>
+              <Link
                 href="/"
                 className="mx-auto transform transition-all hover:scale-105 md:mx-0"
               >
@@ -514,8 +515,8 @@ export default function Home({ blogs, profile, skills, projects }) {
                   className="w-full shadow"
                   alt="portfolio image"
                 />
-              </a>
-              <a
+              </Link>
+              <Link
                 href="/"
                 className="mx-auto transform transition-all hover:scale-105 md:mx-0"
               >
@@ -524,7 +525,7 @@ export default function Home({ blogs, profile, skills, projects }) {
                   className="w-full shadow"
                   alt="portfolio image"
                 />
-              </a> */}
+              </Link> */}
             </div>
           </div>
 
@@ -583,7 +584,7 @@ export default function Home({ blogs, profile, skills, projects }) {
               My work experience
             </h2>
             <h3 className="pt-6 text-center font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl">
-              Here's what I did before freelancing
+              Here&apos;s what I did before freelancing
             </h3>
 
             <div className="relative mx-auto mt-12 flex w-full flex-col lg:w-2/3">
@@ -842,7 +843,7 @@ export default function Home({ blogs, profile, skills, projects }) {
                     </Link>
                   );
                 })}
-                {/* <a href="/post" className="shadow">
+                {/* <Link href="/post" className="shadow">
               <div style={{"backgroundImage": "url(/assets/img/post-02.png)"}}
                 className="group relative h-72 bg-cover bg-center bg-no-repeat sm:h-84 lg:h-64 xl:h-72">
                 <span
@@ -857,8 +858,8 @@ export default function Home({ blogs, profile, skills, projects }) {
                   elit, sed do
                   eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
               </div>
-            </a>
-            <a href="/post" className="shadow">
+            </Link>
+            <Link href="/post" className="shadow">
               <div style={{"backgroundImage": "url(/assets/img/post-03.png)"}}
                 className="group relative h-72 bg-cover bg-center bg-no-repeat sm:h-84 lg:h-64 xl:h-72">
                 <span
@@ -873,14 +874,14 @@ export default function Home({ blogs, profile, skills, projects }) {
                   elit, sed do
                   eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
               </div>
-            </a> */}
+            </Link> */}
               </div>
             </div>
           </div>
 
           <div className="container py-16 md:py-20" id="contact">
             <h2 className="text-center font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl">
-              Here's a contact form
+              Here&apos;s a contact form
             </h2>
             <h4 className="pt-6 text-center font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl">
               Have Any Questions?
@@ -969,7 +970,7 @@ export default function Home({ blogs, profile, skills, projects }) {
             <div className="container relative z-30">
               <h3 className="text-center font-header text-3xl uppercase leading-tight tracking-wide text-white sm:text-4xl lg:text-5xl">
                 Keep <span className="font-bold">up-to-date</span> <br />
-                with what I'm up to
+                with what I&apos;m up to
               </h3>
               <form className="mt-6 flex flex-col justify-center sm:flex-row">
                 <input
@@ -991,21 +992,21 @@ export default function Home({ blogs, profile, skills, projects }) {
               © Copyright 2022. All right reserved, ATOM.
             </p>
             <div className="flex items-center justify-center pt-5 sm:justify-start sm:pt-0">
-              <a href="/">
+              <Link href="/">
                 <i className="bx bxl-facebook-square text-2xl text-white hover:text-yellow"></i>
-              </a>
-              <a href="/" className="pl-4">
+              </Link>
+              <Link href="/" className="pl-4">
                 <i className="bx bxl-twitter text-2xl text-white hover:text-yellow"></i>
-              </a>
-              <a href="/" className="pl-4">
+              </Link>
+              <Link href="/" className="pl-4">
                 <i className="bx bxl-dribbble text-2xl text-white hover:text-yellow"></i>
-              </a>
-              <a href="/" className="pl-4">
+              </Link>
+              <Link href="/" className="pl-4">
                 <i className="bx bxl-linkedin text-2xl text-white hover:text-yellow"></i>
-              </a>
-              <a href="/" className="pl-4">
+              </Link>
+              <Link href="/" className="pl-4">
                 <i className="bx bxl-instagram text-2xl text-white hover:text-yellow"></i>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

@@ -3,6 +3,7 @@ import Head from "next/head";
 import { createClient } from "next-sanity";
 import PortableText from "react-portable-text";
 import NavBar from "@/components/NavBar";
+import Link from "next/link";
 
 const Post = ({ blog, profile }) => {
   const router = useRouter();
@@ -145,18 +146,18 @@ const Post = ({ blog, profile }) => {
                 />
               </div>
               <div class="mt-10 flex justify-between border-t border-lila py-12">
-                <a href="/" class="flex items-center">
+                <Link href="/" class="flex items-center">
                   <i class="bx bx-left-arrow-alt text-2xl text-primary"></i>
                   <span class="block pl-2 font-body text-lg font-bold uppercase text-primary md:pl-5">
                     Previous Post
                   </span>
-                </a>
-                <a href="/" class="flex items-center">
+                </Link>
+                <Link href="/" class="flex items-center">
                   <span class="block pr-2 font-body text-lg font-bold uppercase text-primary md:pr-5">
                     Next Post
                   </span>
                   <i class="bx bx-right-arrow-alt text-2xl text-primary"></i>
-                </a>
+                </Link>
               </div>
               <div class="flex flex-col items-center border-t border-lila py-12 pt-12 md:flex-row md:items-start xl:pb-20">
                 <div class="w-3/4 sm:w-2/5 lg:w-1/4 xl:w-1/5">
@@ -178,21 +179,21 @@ const Post = ({ blog, profile }) => {
                     Duis aute irure dolor in reprehenderit in voluptate velit.
                   </p>
                   <div class="flex items-center justify-center pt-5 md:justify-start">
-                    <a href="/">
+                    <Link href="/">
                       <i class="bx bxl-facebook-square text-2xl text-primary hover:text-yellow"></i>
-                    </a>
-                    <a href="/" class="pl-4">
+                    </Link>
+                    <Link href="/" class="pl-4">
                       <i class="bx bxl-twitter text-2xl text-primary hover:text-yellow"></i>
-                    </a>
-                    <a href="/" class="pl-4">
+                    </Link>
+                    <Link href="/" class="pl-4">
                       <i class="bx bxl-dribbble text-2xl text-primary hover:text-yellow"></i>
-                    </a>
-                    <a href="/" class="pl-4">
+                    </Link>
+                    <Link href="/" class="pl-4">
                       <i class="bx bxl-linkedin text-2xl text-primary hover:text-yellow"></i>
-                    </a>
-                    <a href="/" class="pl-4">
+                    </Link>
+                    <Link href="/" class="pl-4">
                       <i class="bx bxl-instagram text-2xl text-primary hover:text-yellow"></i>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -206,21 +207,21 @@ const Post = ({ blog, profile }) => {
               © Copyright 2022. All right reserved, ATOM.
             </p>
             <div class="flex items-center justify-center pt-5 sm:justify-start sm:pt-0">
-              <a href="/">
+              <Link href="/">
                 <i class="bx bxl-facebook-square text-2xl text-white hover:text-yellow"></i>
-              </a>
-              <a href="/" class="pl-4">
+              </Link>
+              <Link href="/" class="pl-4">
                 <i class="bx bxl-twitter text-2xl text-white hover:text-yellow"></i>
-              </a>
-              <a href="/" class="pl-4">
+              </Link>
+              <Link href="/" class="pl-4">
                 <i class="bx bxl-dribbble text-2xl text-white hover:text-yellow"></i>
-              </a>
-              <a href="/" class="pl-4">
+              </Link>
+              <Link href="/" class="pl-4">
                 <i class="bx bxl-linkedin text-2xl text-white hover:text-yellow"></i>
-              </a>
-              <a href="/" class="pl-4">
+              </Link>
+              <Link href="/" class="pl-4">
                 <i class="bx bxl-instagram text-2xl text-white hover:text-yellow"></i>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
